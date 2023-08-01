@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<title>Order Cp </title>
+<head><div class="header">
+      <ul id="nav">
+        <li><a id="a" href="#Home">Home</a></li>
+        <li><a id="a"href="#About">About</a></li>
+        <li><a id="a" href="#services">Services</a></li>
+        <li><a id="a" href="#contact">Contact</a></li>
+      </ul>
+</div>
+<div>
+  <input type="checkbox" class="checkbox" id="checkbox">
+  <label for="checkbox" class="checkbox-label">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+    <span class="ball"></span>
+  </label>
+</div>
+</head>
+<header>
+    
+      <h2 class="logo">codm TopUp</h2>
+
+    
+	<marquee class="strip"><strong>☆&nbsp &nbsp OFFER GOING ON&nbsp &nbsp☆&nbsp &nbsp  Hurry, 10% discount on all services. Contact me as soon as possible.</strong></marquee>
+	</header>
+
+
+<style>
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {box-sizing: border-box;}
+body.dark {background-color: #292c35;} /* #9b59b6 */
+
+body.dark h1, body.dark .support a {color: #fff;}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position:relative ;
+  padding: 5px;
+  cursor: pointer;
+  display:flex ;
+  justify-content: space-between;
+  align-items: center;}
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;}
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+#a{padding:15px;
+	flex: 1;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  line-height: 3;
+  color: black;
+float:left;
+display:block;
+}
+#a:link,
+#a:visited,
+#a:focus {
+  background: palegoldenrod;
+  color: black;
+}
+#a:hover {
+  background: orange;
+}#a:active {
+  background: darkred;
+  color: white;
+}
+
+     .contact {
+      background-color: #eee;
+      border-radius:50%;
+    }
+     .header{
+             display:flex;
+       padding:0 70px;
+        justify-content: space-between;
+		margin-top:20px;
+		margin-bottom:20px;
+}
+           #nav{
+			   background-color:blue;
+			   display: flex;
+      align-content: center;
+      justify-content: center;
+      gap: 60px;
+      list-style-type: none;
+	  overflow:hidden;
+	  position:sticky;
+		   }	   
+marquee{
+	font-size:30px;
+}
+       body {
+         font-family: "Montserrat", sans-serif;
+          background-color: #e6f7f2;
+         font-size:35px;
+        text-align: center;
+        transition: background 0.2s linear;
+         }
+			  
+			  
+    button {
+        font-size: 35px;
+    }
+
+ 
+
+    header {
+        border-right-style: solid;
+        border-left-style: solid;
+        border-top-style: dashed;
+        border-bottom-style: dashed;
+        font-size: 1.2em;
+        color: blue;
+        animation: header linear 3s infinite;
+    }
+@keyframes header {
+        0% {
+            color: red;
+            text-shadow: 1px 1px 10px #00ffff;
+        }
+        25% {
+            color: orange;
+        }
+        50% {
+            color: lime;
+            text-shadow: 1px 1px 10px aqua;
+        }
+        75% {
+            color: orange;
+        }
+        100% {
+            color: orange;
+            text-shadow: 1px 1px 10px crimson;
+        }
+    }
+    header:hover {
+        letter-spacing: 3px;
+        transition: 1.5s;
+
+    }
+    
+.logo{
+	border:none;
+color:none;}
+}
+    .h2
+    {
+        border: solid red;
+        text-align: center;
+        color: blue;
+    }
+
+    .button{ 
+         background-color :red ;
+         color : #fff;
+         padding : 10px 20px; border :  none; border-radius : 4px; cursor : pointer;
+      }
+      .button:hover { 
+         background-color : #419ea3;
+      }
+    }
+    img {
+	    padding: 2%;
+        width: 300px;
+        height: 300px;
+        transition: width 1s, height 1s, transform 1s;
+    }
+
+    img:hover {border-radius:50%;
+        width: 600px;
+        height: 700px;
+        transform: rotate(360deg);
+     
+    }
+
+       
+
+    .loader {
+        border: 16px solid #f3f3f3;
+        /* Light grey */
+        border-top: 16px solid #3498db;
+        /* Blue */
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        animation: spin 2s linear infinite;
+        justify-content: center;
+    }
+
+@keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+		
+		
+     input,
+textarea {
+  border: 1px solid-red;
+}
+
+		
+    </style>
+
+        <body id="home">
+            <img src="https://i.ibb.co/44ysLPT/IMG-2378.jpg">
+            <br>
+            <br>
+			<br>
+            <div class="service"><h3>Codm Points and BP</h3>
+			<label for="b1">Amount(cp)</label>
+                <select name="size" id="b1">
+
+                    <option>420 cp</option>
+                    <option>880 cp </option>
+                    <option>2400 cp</option>
+                    <option>5000 cp</option>
+                    <option>10800 cp</option>
+                </select>
+
+                <label for="b2">Bp</label>
+                <select name="color" id="b2">
+                    <option>1.238.00</option>
+                    <option>2,925.00</option>
+                </select>
+                <br>
+            <form id ="services" method="post" action="index.php">
+<fieldset class="fieldset"><legend>Order</legend>
+                
+    <div id="from">
+    <label for="name">From:</label>
+    <input placeholder="e.g VictorSolos" type="text" id="name" name="user_name" />
+  </div>
+
+  <div id="reply">
+    <label for="mail">Reply:</label>
+    <input placeholder="example@doman.com"type="email" id="mail" name="user_email" />
+  </div>
+
+  <div id="message">
+    <label for="msg">Your message:</label>
+   <textarea placeholder="..." rows="10"type= "textarea"id="msg" name="user_message"></textarea>
+
+              </fieldset>
+            </form></div>
+            <br>
+
+            <button name="submit" class="button" onclick="alert('order Approved')">submit</button>
+            <br>
+
+            <div class="loader"></div>
+
+     
+    <br>
+    <div class="contact"id="contact">
+	 <h3>contact</h3><br>
+    <a href="https://www.tiktok.com/@vict__o_r">Tiktok</a><br>
+        <a href="https://www.facebook.com/profile.php?id=100082253320278&mibextid=LQQJ4d">Facebook</a><br>
+        <a href="https://instagram.com/vic_t_o__r?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a></li>
+    </div><br>
+        
+		
+		<div class="About me" id="About"><details><summary>
+		<strong>About me </strong></summary><p>I am a web developer with over 5 years of experience in the industry.</p><p> I have a strong background in both front-end and back-end development, and I am proficient in a variety of programming languages and frameworks. </p><p>I am also experienced in project management and have a proven track record of delivering high-quality work on time and within budget.
+
+</p><p>I am passionate about web development and I am always looking for new challenges.</p><p> I am also a team player and I enjoy working with others to create innovative and user-friendly websites.</p>
+
+<p>In my spare time, I enjoy playing video games, hiking, and spending time with my family.</p>
+</details></div>
+<br>
+<br></body>
+
+    <footer>
+  
+  copyright &copy; victor 2023
+</footer>
+       
+
+    <script>
+		const checkbox = document.getElementById("checkbox")
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark")
+})
+    </script>
+</html>
